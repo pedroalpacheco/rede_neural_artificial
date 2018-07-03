@@ -7,8 +7,11 @@ import numpy as np
 #entradas = np.array([[0,0],[0,1], [1,0], [1,1]])
 #saidas = np.array([0,1,1,1])
 
-entradas = np.array([[0,0],[0,1], [1,0], [1,1]])
-saidas = np.array([0,1,1,0])
+#entradas = np.array([[0,0],[0,1], [1,0], [1,1]])
+entradas = np.array([[4,8],[7,1], [2,2], [3,4]])#Parafusos
+#saidas = np.array([0,1,1,0])
+saidas = np.array([0,0,0,1])
+#saidas = np.array([0,1,1,1])
 pesos = np.array([0.0, 0.0])
 taxaAprendizagem = 0.1
 
@@ -40,5 +43,3 @@ print(calculaSaida(entradas[0]))
 print(calculaSaida(entradas[1]))
 print(calculaSaida(entradas[2]))
 print(calculaSaida(entradas[3]))
-            
-            
