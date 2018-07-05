@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 19 20:38:44 2017
+#1 = Erro: 0.003883688466005393 / epocas = 100000
+#2 = Erro: 0.003884870953608022 / epocas = 1000000
 
-@author: Jones
-"""
 import numpy as np
 
 def sigmoid(soma):
@@ -49,7 +47,7 @@ for j in range(epocas):
     erroCamadaSaida = saidas - camadaSaida
     mediaAbsoluta = np.mean(np.abs(erroCamadaSaida))
     print("Erro: " + str(mediaAbsoluta))
-    
+
     derivadaSaida = sigmoidDerivada(camadaSaida)
     deltaSaida = erroCamadaSaida * derivadaSaida
     
@@ -64,7 +62,7 @@ for j in range(epocas):
     camadaEntradaTransposta = camadaEntrada.T
     pesosNovo0 = camadaEntradaTransposta.dot(deltaCamadaOculta)
     pesos0 = (pesos0 * momento) + (pesosNovo0 * taxaAprendizagem)
-    
+
     
     
     
